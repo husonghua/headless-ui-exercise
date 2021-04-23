@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full px-4 p-16 bg-red-400">
-    <div class="w-full max-w-md p-2 mx-auto bg-white rounded-2xl space-y-2">
+  <div class="w-full p-16 px-4">
+    <div class="w-full max-w-md p-2 mx-auto space-y-2 bg-white rounded-2xl">
       <Disclosure
         v-for="disclosure in disclosures"
         :key="disclosure"

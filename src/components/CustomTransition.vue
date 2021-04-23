@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center py-16">
+  <div class="flex flex-col items-center">
     <div class="w-32 h-32">
       <TransitionRoot
         appear

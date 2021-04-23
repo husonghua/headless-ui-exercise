@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full max-w-sm px-4 fixed top-16">
+  <div class="w-full max-w-sm px-4">
     <div class="flex">
       <Popover v-slot="{ open }" class="relative">
         <PopoverButton

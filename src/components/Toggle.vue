@@ -1,5 +1,5 @@
 <template>
-  <div class="py-16">
+  <div class="py-2">
     <Switch
       v-model="enabled"
       :class="enabled ? 'bg-teal-900' : 'bg-teal-700'"

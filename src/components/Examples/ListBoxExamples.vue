@@ -1,15 +1,17 @@
 <template>
-  <form @submit.prevent="submit">
+  <form @submit.prevent="submit" class="p-2">
     <ListBox :options="people" v-model="selectedPersonId"></ListBox>
-    <button type="submit">submit</button>
-    {{ selectedPersonId }}
+    <div class="pt-2">
+      <BaseButton type="submit">submit</BaseButton>
+    </div>
+    ListBox result: {{ selectedPersonId }}
   </form>
 </template>
 
 <script>
 import { ref } from "@vue/reactivity";
-import ListBox from "./components/ListBox.vue";
-import BaseButton from "./components/BaseButton.vue";
+import ListBox from "../ListBox.vue";
+import BaseButton from "../BaseButton.vue";
 export default {
   components: {
     ListBox,
@@ -32,7 +34,7 @@ export default {
       { id: 61, label: "Hellen Schmidt" },
     ];
     const submit = () => {
-      console.log(selectedPersonId.value);
+      console.log("Submiting: " + selectedPersonId.value);
     };
     return { people, selectedPersonId, submit };
   },

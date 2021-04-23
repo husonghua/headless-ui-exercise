@@ -10,6 +10,7 @@ module.exports = {
         orange: colors.orange,
         amber: colors.amber,
         "light-blue": colors.lightBlue,
+        violet: colors.violet,
       },
     },
   },

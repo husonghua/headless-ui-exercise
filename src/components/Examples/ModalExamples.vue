@@ -1,6 +1,5 @@
 <template>
-  <div class="flex items-center justify-center h-screen">
-    <input type="text" />
+  <div class="p-2">
     <div class="space-x-4">
       <BaseButton type="button" @click="confirmationModalOpen = true">
         Delete
@@ -30,9 +29,9 @@
 
 <script>
 import { defineComponent, ref } from "vue";
-import NotificationModal from "./components/NotificationModal.vue";
-import ConfirmationModal from "./components/ConfirmationModal.vue";
-import BaseButton from "./components/BaseButton.vue";
+import NotificationModal from "../NotificationModal.vue";
+import ConfirmationModal from "../ConfirmationModal.vue";
+import BaseButton from "../BaseButton.vue";
 
 export default defineComponent({
   components: {
